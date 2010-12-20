@@ -12,7 +12,7 @@ module Ankh
       @first_number = @second_number + rand(9)
       @operation = OPERATIONS[rand(2)]
       
-      @question = "What is #{first_number} #{operation} #{second_number}?"
+      @question = "Hvad er #{first_number} #{operation} #{second_number}?"
       @answer = @first_number.send(@operation, @second_number)
     end
     
