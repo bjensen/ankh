@@ -7,7 +7,7 @@ module Ankh
       
       def validate(record)
         if has_valid_answer?(record)
-          record.errors.add(:human_answer, @options[:message] || "er ugyldig")
+          record.errors.add_to_base("svar på sikkerhedscheck er ugyldig")
           record.human_answer = ""
         end
       end
