@@ -1,3 +1,4 @@
+#Encoding: UTF-8
 module Ankh
   module Validations
     class HumanValidator
